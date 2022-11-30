@@ -29,8 +29,8 @@ const nestedMuppet = {
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
-const [mooo, neigh, baa, oinks, cluck] = farmAnimals.split(' ');
-console.log(mooo, neigh, baa, oinks, cluck)
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+console.log(moo, neigh, baa, oink, cluck)
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
 const [bessie, , dolly, babe, little] =  farmAnimals.split(' ')
@@ -62,5 +62,8 @@ console.log(muppetName, color, song , job, partner)
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 const {nestedName} = nestedMuppet
-const{ song2, song4} = nestedMuppet.album.theMuppetMovie;
-console.log(nestedName, song2, song4)
+const{ song2} = nestedMuppet.album.theMuppetMovie;
+const{ song4} = nestedMuppet.album.theMuppetMovie;
+const {nestedJob} = nestedMuppet
+const {nestedPartner} = nestedMuppet
+console.log(nestedName, song2, song4, nestedJob, nestedPartner)
